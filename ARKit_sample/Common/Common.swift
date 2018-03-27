@@ -12,8 +12,7 @@ import UIKit
 struct SampleMenu {
     let title: String
     let storyBoadName: String
-//    let detail: String
-    let viewController: UIViewController
+    //let viewController: UIViewController
     
     func getController() -> UIViewController {
         let storyboard = UIStoryboard(name: storyBoadName, bundle: nil)
@@ -25,8 +24,8 @@ struct SampleMenu {
 
 
 let menu = [
-    SampleMenu(title:"add_box", storyBoadName:"AddBox", viewController:AddBoxViewController()),
-    SampleMenu(title:"plane_detective", storyBoadName:"AddBox", viewController:AddBoxViewController()),
+    SampleMenu(title:"add_box", storyBoadName:"AddBox"),
+    SampleMenu(title:"plane_detective", storyBoadName:"PlaneDetection"),
 
 ]
 

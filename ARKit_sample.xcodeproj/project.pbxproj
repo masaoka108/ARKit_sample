@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE12EC7F206A807900F4AEF3 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = CE12EC7D206A807900F4AEF3 /* ship.png */; };
+		CE12EC80206A807900F4AEF3 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = CE12EC7E206A807900F4AEF3 /* ship.scn */; };
 		CE2BB5FD206520FB008AEE2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */; };
 		CE2BB5FF206520FB008AEE2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB5FE206520FB008AEE2F /* ViewController.swift */; };
 		CE2BB604206520FB008AEE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2BB603206520FB008AEE2F /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 		CE2BB62D206522EE008AEE2F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB62C206522EE008AEE2F /* Common.swift */; };
 		CE2BB62F20652BEF008AEE2F /* AddBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB62E20652BEF008AEE2F /* AddBoxViewController.swift */; };
 		CE2BB632206531B9008AEE2F /* AddBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2BB631206531B9008AEE2F /* AddBox.storyboard */; };
+		CE61BE082065443300E3653B /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61BE072065443300E3653B /* PlaneDetectionViewController.swift */; };
+		CE61BE0A2065444A00E3653B /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61BE092065444A00E3653B /* PlaneDetection.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE12EC7D206A807900F4AEF3 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		CE12EC7E206A807900F4AEF3 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
 		CE2BB5F9206520FB008AEE2F /* ARKit_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2BB5FE206520FB008AEE2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		CE2BB62C206522EE008AEE2F /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CE2BB62E20652BEF008AEE2F /* AddBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoxViewController.swift; sourceTree = "<group>"; };
 		CE2BB631206531B9008AEE2F /* AddBox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddBox.storyboard; sourceTree = "<group>"; };
+		CE61BE072065443300E3653B /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
+		CE61BE092065444A00E3653B /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE12EC7C206A806200F4AEF3 /* 3D objects */ = {
+			isa = PBXGroup;
+			children = (
+				CE12EC81206A80CC00F4AEF3 /* ship */,
+			);
+			path = "3D objects";
+			sourceTree = "<group>";
+		};
+		CE12EC81206A80CC00F4AEF3 /* ship */ = {
+			isa = PBXGroup;
+			children = (
+				CE12EC7D206A807900F4AEF3 /* ship.png */,
+				CE12EC7E206A807900F4AEF3 /* ship.scn */,
+			);
+			path = ship;
+			sourceTree = "<group>";
+		};
 		CE2BB5F0206520FB008AEE2F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,7 @@
 		CE2BB5FB206520FB008AEE2F /* ARKit_sample */ = {
 			isa = PBXGroup;
 			children = (
+				CE12EC7C206A806200F4AEF3 /* 3D objects */,
 				CE2BB62A206521B9008AEE2F /* Common */,
 				CE2BB62B206521C4008AEE2F /* Page */,
 				CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */,
@@ -141,6 +167,7 @@
 		CE2BB62B206521C4008AEE2F /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				CE61BE062065441300E3653B /* PlaneDetection */,
 				CE2BB63020653198008AEE2F /* AddBox */,
 			);
 			path = Page;
@@ -153,6 +180,15 @@
 				CE2BB631206531B9008AEE2F /* AddBox.storyboard */,
 			);
 			path = AddBox;
+			sourceTree = "<group>";
+		};
+		CE61BE062065441300E3653B /* PlaneDetection */ = {
+			isa = PBXGroup;
+			children = (
+				CE61BE072065443300E3653B /* PlaneDetectionViewController.swift */,
+				CE61BE092065444A00E3653B /* PlaneDetection.storyboard */,
+			);
+			path = PlaneDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2BB607206520FB008AEE2F /* LaunchScreen.storyboard in Resources */,
+				CE12EC80206A807900F4AEF3 /* ship.scn in Resources */,
 				CE2BB604206520FB008AEE2F /* Assets.xcassets in Resources */,
 				CE2BB632206531B9008AEE2F /* AddBox.storyboard in Resources */,
+				CE61BE0A2065444A00E3653B /* PlaneDetection.storyboard in Resources */,
+				CE12EC7F206A807900F4AEF3 /* ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +331,7 @@
 				CE2BB5FF206520FB008AEE2F /* ViewController.swift in Sources */,
 				CE2BB62D206522EE008AEE2F /* Common.swift in Sources */,
 				CE2BB62F20652BEF008AEE2F /* AddBoxViewController.swift in Sources */,
+				CE61BE082065443300E3653B /* PlaneDetectionViewController.swift in Sources */,
 				CE2BB5FD206520FB008AEE2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
