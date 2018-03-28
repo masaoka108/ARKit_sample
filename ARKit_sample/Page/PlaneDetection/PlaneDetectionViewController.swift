@@ -88,6 +88,8 @@ extension UIColor {
 }
 
 extension PlaneDetectionViewController: ARSCNViewDelegate {
+
+    // 追加
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1 アンカーを取得
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
@@ -114,6 +116,8 @@ extension PlaneDetectionViewController: ARSCNViewDelegate {
         node.addChildNode(planeNode)
     }
     
+    
+    // 更新
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         // 1　アンカー、ノード、plane を取得
         guard let planeAnchor = anchor as?  ARPlaneAnchor,

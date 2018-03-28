@@ -24,8 +24,9 @@ struct SampleMenu {
 
 
 let menu = [
-    SampleMenu(title:"add_box", storyBoadName:"AddBox"),
-    SampleMenu(title:"plane_detective", storyBoadName:"PlaneDetection"),
+    SampleMenu(title:"Just Add Box", storyBoadName:"AddBox"),
+    SampleMenu(title:"Plane Detective And Put Object", storyBoadName:"PlaneDetection"),
+    SampleMenu(title:"3D Paint", storyBoadName:"Paint"),
 
 ]
 

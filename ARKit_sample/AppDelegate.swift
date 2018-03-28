@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //Navigation使用時に追加
+        //Navigation使用
         let viewController: ViewController = ViewController()
         navigationController = UINavigationController(rootViewController: viewController)
         
