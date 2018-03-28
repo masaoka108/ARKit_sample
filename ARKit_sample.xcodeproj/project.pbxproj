@@ -15,6 +15,10 @@
 		CE207674206B27690041F812 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207673206B27690041F812 /* SCNVector3Extensions.swift */; };
 		CE207677206B310E0041F812 /* PutPicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE207676206B310E0041F812 /* PutPicture.storyboard */; };
 		CE207679206B31280041F812 /* PutPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207678206B31280041F812 /* PutPictureViewController.swift */; };
+		CE20767C206B53A60041F812 /* InteractContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20767B206B53A60041F812 /* InteractContentViewController.swift */; };
+		CE20767E206B53B40041F812 /* InteractContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE20767D206B53B40041F812 /* InteractContent.storyboard */; };
+		CE207680206B55590041F812 /* Chameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20767F206B55590041F812 /* Chameleon.swift */; };
+		CE207682206B57170041F812 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE207681206B57170041F812 /* art.scnassets */; };
 		CE2BB5FD206520FB008AEE2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */; };
 		CE2BB5FF206520FB008AEE2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB5FE206520FB008AEE2F /* ViewController.swift */; };
 		CE2BB604206520FB008AEE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2BB603206520FB008AEE2F /* Assets.xcassets */; };
@@ -54,6 +58,10 @@
 		CE207673206B27690041F812 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
 		CE207676206B310E0041F812 /* PutPicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PutPicture.storyboard; sourceTree = "<group>"; };
 		CE207678206B31280041F812 /* PutPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutPictureViewController.swift; sourceTree = "<group>"; };
+		CE20767B206B53A60041F812 /* InteractContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractContentViewController.swift; sourceTree = "<group>"; };
+		CE20767D206B53B40041F812 /* InteractContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InteractContent.storyboard; sourceTree = "<group>"; };
+		CE20767F206B55590041F812 /* Chameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chameleon.swift; sourceTree = "<group>"; };
+		CE207681206B57170041F812 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CE2BB5F9206520FB008AEE2F /* ARKit_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2BB5FE206520FB008AEE2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +142,15 @@
 			path = PutPicture;
 			sourceTree = "<group>";
 		};
+		CE20767A206B538F0041F812 /* IntaractContent */ = {
+			isa = PBXGroup;
+			children = (
+				CE20767B206B53A60041F812 /* InteractContentViewController.swift */,
+				CE20767D206B53B40041F812 /* InteractContent.storyboard */,
+			);
+			path = IntaractContent;
+			sourceTree = "<group>";
+		};
 		CE2BB5F0206520FB008AEE2F = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +179,7 @@
 				CE2BB62B206521C4008AEE2F /* Page */,
 				CE2BB5FC206520FB008AEE2F /* AppDelegate.swift */,
 				CE2BB5FE206520FB008AEE2F /* ViewController.swift */,
+				CE207681206B57170041F812 /* art.scnassets */,
 				CE2BB603206520FB008AEE2F /* Assets.xcassets */,
 				CE2BB605206520FB008AEE2F /* LaunchScreen.storyboard */,
 				CE2BB608206520FB008AEE2F /* Info.plist */,
@@ -190,6 +208,7 @@
 		CE2BB62A206521B9008AEE2F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CE20767F206B55590041F812 /* Chameleon.swift */,
 				CE2BB62C206522EE008AEE2F /* Common.swift */,
 				CE207673206B27690041F812 /* SCNVector3Extensions.swift */,
 			);
@@ -199,6 +218,7 @@
 		CE2BB62B206521C4008AEE2F /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				CE20767A206B538F0041F812 /* IntaractContent */,
 				CE207675206B30F10041F812 /* PutPicture */,
 				CE12EC82206B1F6D00F4AEF3 /* Paint */,
 				CE61BE062065441300E3653B /* PlaneDetection */,
@@ -333,11 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2BB607206520FB008AEE2F /* LaunchScreen.storyboard in Resources */,
+				CE207682206B57170041F812 /* art.scnassets in Resources */,
 				CE12EC80206A807900F4AEF3 /* ship.scn in Resources */,
 				CE207677206B310E0041F812 /* PutPicture.storyboard in Resources */,
 				CE12EC88206B1FDD00F4AEF3 /* Paint.storyboard in Resources */,
 				CE207672206B249B0041F812 /* world.scn in Resources */,
 				CE2BB604206520FB008AEE2F /* Assets.xcassets in Resources */,
+				CE20767E206B53B40041F812 /* InteractContent.storyboard in Resources */,
 				CE2BB632206531B9008AEE2F /* AddBox.storyboard in Resources */,
 				CE61BE0A2065444A00E3653B /* PlaneDetection.storyboard in Resources */,
 				CE12EC7F206A807900F4AEF3 /* ship.png in Resources */,
@@ -371,8 +393,10 @@
 				CE2BB62D206522EE008AEE2F /* Common.swift in Sources */,
 				CE2BB62F20652BEF008AEE2F /* AddBoxViewController.swift in Sources */,
 				CE207679206B31280041F812 /* PutPictureViewController.swift in Sources */,
+				CE207680206B55590041F812 /* Chameleon.swift in Sources */,
 				CE61BE082065443300E3653B /* PlaneDetectionViewController.swift in Sources */,
 				CE2BB5FD206520FB008AEE2F /* AppDelegate.swift in Sources */,
+				CE20767C206B53A60041F812 /* InteractContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

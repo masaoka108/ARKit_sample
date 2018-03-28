@@ -28,6 +28,7 @@ let menu = [
     SampleMenu(title:"Plane Detective And Put Object", storyBoadName:"PlaneDetection"),
     SampleMenu(title:"3D Paint", storyBoadName:"Paint"),
     SampleMenu(title:"Put Picture", storyBoadName:"PutPicture"),
+    SampleMenu(title:"Interact Content", storyBoadName:"InteractContent"),
 ]
 
 func getController(viewControllerName:String, title:String) -> UIViewController {
