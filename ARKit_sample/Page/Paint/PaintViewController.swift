@@ -65,13 +65,29 @@ class PaintViewController: UIViewController, ARSCNViewDelegate {
         let currentPosition = pointOfView.position + (dir * 0.1)
         
         if buttonHighlighted {
-            //ボタンが押されていればcurrentPositionにシリンダーを配置
-            let cylinderGeometry = SCNCylinder(radius: CGFloat(0.005), height: 0.001)
-            let boxNode = SCNNode()
-            boxNode.geometry = cylinderGeometry
-            boxNode.position = currentPosition
-            boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-            sceneView.scene.rootNode.addChildNode(boxNode)
+//            //ボタンが押されていればcurrentPositionにシリンダーを配置
+//            let cylinderGeometry = SCNCylinder(radius: CGFloat(0.005), height: 0.001)
+//            let boxNode = SCNNode()
+//            boxNode.geometry = cylinderGeometry
+//            boxNode.position = currentPosition
+//            boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+//            sceneView.scene.rootNode.addChildNode(boxNode)
+
+//            //2点をつなぐLINE Geometryを作成
+//            let measureLine = LineNode(from: previousPoint!, to: currentPosition, lineColor: UIColor.blue, lineWidth: 0.015)
+//            sceneView.scene.rootNode.addChildNode(measureLine)
+
+            
+            let sphereGeometry = SCNSphere(radius: 0.005)
+            let material = SCNMaterial()
+            let sphereNode = SCNNode()
+            material.diffuse.contents = UIColor.blue
+            sphereGeometry.materials = [material]
+            sphereNode.geometry = sphereGeometry
+            sphereNode.position = currentPosition
+            sceneView.scene.rootNode.addChildNode(sphereNode)
+            
+        
         }
         previousPoint = currentPosition
     }

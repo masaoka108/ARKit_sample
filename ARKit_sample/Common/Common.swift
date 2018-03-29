@@ -26,9 +26,11 @@ struct SampleMenu {
 let menu = [
     SampleMenu(title:"Just Add Box", storyBoadName:"AddBox"),
     SampleMenu(title:"Plane Detective And Put Object", storyBoadName:"PlaneDetection"),
-    SampleMenu(title:"3D Paint", storyBoadName:"Paint"),
+    SampleMenu(title:"AR Paint", storyBoadName:"Paint"),
     SampleMenu(title:"Put Picture", storyBoadName:"PutPicture"),
     SampleMenu(title:"Interact Content", storyBoadName:"InteractContent"),
+    SampleMenu(title:"AR Measure", storyBoadName:"Measure"),
+    SampleMenu(title:"AR Text", storyBoadName:"Text"),
 ]
 
 func getController(viewControllerName:String, title:String) -> UIViewController {

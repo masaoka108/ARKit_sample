@@ -23,10 +23,25 @@
 import Foundation
 import SceneKit
 import ARKit
-
+import UIKit
 
 extension SCNVector3
 {
+
+    func distance(to destination: SCNVector3) -> CGFloat {
+        let dx = destination.x - x
+        let dy = destination.y - y
+        let dz = destination.z - z
+        return CGFloat(sqrt(dx*dx + dy*dy + dz*dz))
+    }
+    
+    static func positionFrom(matrix: matrix_float4x4) -> SCNVector3 {
+        let column = matrix.columns.3
+        return SCNVector3(column.x, column.y, column.z)
+    }
+
+    
+    
     /**
      * Negates the vector described by SCNVector3 and returns
      * the result as a new SCNVector3.
@@ -310,3 +325,28 @@ extension UIImage {
     }
 }
 
+extension SCNNode {
+    
+    func setUniformScale(_ scale: Float) {
+        self.scale = SCNVector3Make(scale, scale, scale)
+    }
+    
+    func renderOnTop() {
+        self.renderingOrder = 2
+        if let geom = self.geometry {
+            for material in geom.materials {
+                material.readsFromDepthBuffer = false
+            }
+        }
+        for child in self.childNodes {
+            child.renderOnTop()
+        }
+    }
+    
+    func setPivot() {
+        let minVec = self.boundingBox.min
+        let maxVec = self.boundingBox.max
+        let bound = SCNVector3Make( maxVec.x - minVec.x, maxVec.y - minVec.y, maxVec.z - minVec.z);
+        self.pivot = SCNMatrix4MakeTranslation(bound.x / 2, bound.y / 2, bound.z / 2);
+    }
+}

@@ -12,7 +12,7 @@
 		CE12EC86206B1FC700F4AEF3 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12EC85206B1FC700F4AEF3 /* PaintViewController.swift */; };
 		CE12EC88206B1FDD00F4AEF3 /* Paint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12EC87206B1FDD00F4AEF3 /* Paint.storyboard */; };
 		CE207672206B249B0041F812 /* world.scn in Resources */ = {isa = PBXBuildFile; fileRef = CE207671206B249B0041F812 /* world.scn */; };
-		CE207674206B27690041F812 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207673206B27690041F812 /* SCNVector3Extensions.swift */; };
+		CE207674206B27690041F812 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207673206B27690041F812 /* Extensions.swift */; };
 		CE207677206B310E0041F812 /* PutPicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE207676206B310E0041F812 /* PutPicture.storyboard */; };
 		CE207679206B31280041F812 /* PutPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207678206B31280041F812 /* PutPictureViewController.swift */; };
 		CE20767C206B53A60041F812 /* InteractContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20767B206B53A60041F812 /* InteractContentViewController.swift */; };
@@ -30,6 +30,14 @@
 		CE2BB632206531B9008AEE2F /* AddBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2BB631206531B9008AEE2F /* AddBox.storyboard */; };
 		CE61BE082065443300E3653B /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61BE072065443300E3653B /* PlaneDetectionViewController.swift */; };
 		CE61BE0A2065444A00E3653B /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61BE092065444A00E3653B /* PlaneDetection.storyboard */; };
+		CE77BB83206B808500A13A65 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB82206B808400A13A65 /* MeasureViewController.swift */; };
+		CE77BB85206B809200A13A65 /* Measure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE77BB84206B809200A13A65 /* Measure.storyboard */; };
+		CE77BB87206B83FD00A13A65 /* SphereNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB86206B83FD00A13A65 /* SphereNode.swift */; };
+		CE77BB89206B87C600A13A65 /* LineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB88206B87C600A13A65 /* LineNode.swift */; };
+		CE77BB8C206BA49500A13A65 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB8B206BA49500A13A65 /* TextViewController.swift */; };
+		CE77BB8E206BA4A300A13A65 /* Text.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE77BB8D206BA4A300A13A65 /* Text.storyboard */; };
+		CE77BB90206C6D8C00A13A65 /* ARText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB8F206C6D8C00A13A65 /* ARText.swift */; };
+		CE77BB92206C6DC900A13A65 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77BB91206C6DC900A13A65 /* TextNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +63,7 @@
 		CE12EC85206B1FC700F4AEF3 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		CE12EC87206B1FDD00F4AEF3 /* Paint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paint.storyboard; sourceTree = "<group>"; };
 		CE207671206B249B0041F812 /* world.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = world.scn; sourceTree = "<group>"; };
-		CE207673206B27690041F812 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		CE207673206B27690041F812 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE207676206B310E0041F812 /* PutPicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PutPicture.storyboard; sourceTree = "<group>"; };
 		CE207678206B31280041F812 /* PutPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutPictureViewController.swift; sourceTree = "<group>"; };
 		CE20767B206B53A60041F812 /* InteractContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractContentViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +87,14 @@
 		CE2BB631206531B9008AEE2F /* AddBox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddBox.storyboard; sourceTree = "<group>"; };
 		CE61BE072065443300E3653B /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		CE61BE092065444A00E3653B /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
+		CE77BB82206B808400A13A65 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		CE77BB84206B809200A13A65 /* Measure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Measure.storyboard; sourceTree = "<group>"; };
+		CE77BB86206B83FD00A13A65 /* SphereNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereNode.swift; sourceTree = "<group>"; };
+		CE77BB88206B87C600A13A65 /* LineNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
+		CE77BB8B206BA49500A13A65 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		CE77BB8D206BA4A300A13A65 /* Text.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Text.storyboard; sourceTree = "<group>"; };
+		CE77BB8F206C6D8C00A13A65 /* ARText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARText.swift; sourceTree = "<group>"; };
+		CE77BB91206C6DC900A13A65 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +226,11 @@
 			children = (
 				CE20767F206B55590041F812 /* Chameleon.swift */,
 				CE2BB62C206522EE008AEE2F /* Common.swift */,
-				CE207673206B27690041F812 /* SCNVector3Extensions.swift */,
+				CE207673206B27690041F812 /* Extensions.swift */,
+				CE77BB86206B83FD00A13A65 /* SphereNode.swift */,
+				CE77BB88206B87C600A13A65 /* LineNode.swift */,
+				CE77BB8F206C6D8C00A13A65 /* ARText.swift */,
+				CE77BB91206C6DC900A13A65 /* TextNode.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -218,6 +238,8 @@
 		CE2BB62B206521C4008AEE2F /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				CE77BB8A206BA47900A13A65 /* Text */,
+				CE77BB81206B805F00A13A65 /* Measure */,
 				CE20767A206B538F0041F812 /* IntaractContent */,
 				CE207675206B30F10041F812 /* PutPicture */,
 				CE12EC82206B1F6D00F4AEF3 /* Paint */,
@@ -243,6 +265,24 @@
 				CE61BE092065444A00E3653B /* PlaneDetection.storyboard */,
 			);
 			path = PlaneDetection;
+			sourceTree = "<group>";
+		};
+		CE77BB81206B805F00A13A65 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				CE77BB82206B808400A13A65 /* MeasureViewController.swift */,
+				CE77BB84206B809200A13A65 /* Measure.storyboard */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		CE77BB8A206BA47900A13A65 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				CE77BB8B206BA49500A13A65 /* TextViewController.swift */,
+				CE77BB8D206BA4A300A13A65 /* Text.storyboard */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +392,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE77BB8E206BA4A300A13A65 /* Text.storyboard in Resources */,
 				CE2BB607206520FB008AEE2F /* LaunchScreen.storyboard in Resources */,
 				CE207682206B57170041F812 /* art.scnassets in Resources */,
 				CE12EC80206A807900F4AEF3 /* ship.scn in Resources */,
+				CE77BB85206B809200A13A65 /* Measure.storyboard in Resources */,
 				CE207677206B310E0041F812 /* PutPicture.storyboard in Resources */,
 				CE12EC88206B1FDD00F4AEF3 /* Paint.storyboard in Resources */,
 				CE207672206B249B0041F812 /* world.scn in Resources */,
@@ -389,14 +431,20 @@
 			files = (
 				CE2BB5FF206520FB008AEE2F /* ViewController.swift in Sources */,
 				CE12EC86206B1FC700F4AEF3 /* PaintViewController.swift in Sources */,
-				CE207674206B27690041F812 /* SCNVector3Extensions.swift in Sources */,
+				CE207674206B27690041F812 /* Extensions.swift in Sources */,
 				CE2BB62D206522EE008AEE2F /* Common.swift in Sources */,
+				CE77BB92206C6DC900A13A65 /* TextNode.swift in Sources */,
 				CE2BB62F20652BEF008AEE2F /* AddBoxViewController.swift in Sources */,
+				CE77BB8C206BA49500A13A65 /* TextViewController.swift in Sources */,
 				CE207679206B31280041F812 /* PutPictureViewController.swift in Sources */,
 				CE207680206B55590041F812 /* Chameleon.swift in Sources */,
 				CE61BE082065443300E3653B /* PlaneDetectionViewController.swift in Sources */,
+				CE77BB89206B87C600A13A65 /* LineNode.swift in Sources */,
+				CE77BB87206B83FD00A13A65 /* SphereNode.swift in Sources */,
 				CE2BB5FD206520FB008AEE2F /* AppDelegate.swift in Sources */,
+				CE77BB83206B808500A13A65 /* MeasureViewController.swift in Sources */,
 				CE20767C206B53A60041F812 /* InteractContentViewController.swift in Sources */,
+				CE77BB90206C6D8C00A13A65 /* ARText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
